@@ -27,6 +27,7 @@ nav{position:sticky;top:4px;z-index:49;display:flex;justify-content:space-betwee
 .lang button[aria-pressed=true]{background:var(--blue);color:#fff}
 .mast{text-align:center;padding:26px 20px 16px;border-bottom:1px solid var(--line)}
 .logo{font:44px/1 var(--serif);letter-spacing:.03em}.logo b{color:var(--red);font-weight:400}
+.wm{display:inline-block;text-align:center;color:var(--ink)}.wm-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font:600 12px Inter;letter-spacing:.32em;color:var(--blue)}.wm-top b{font:400 14px var(--serif);letter-spacing:.08em;color:var(--red)}.wm-main{margin-top:4px;font:400 clamp(30px,8vw,46px)/1 var(--serif);letter-spacing:.04em}
 .cap{display:block;margin-top:8px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
 .hero{text-align:center;padding:44px 22px 34px;background:radial-gradient(circle at 50% 0,rgba(185,135,45,.2),transparent 40%)}
 .kick{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
@@ -96,9 +97,10 @@ footer h2{color:var(--red);margin:0}.needle{color:var(--blue);font:italic 22px v
 <nav><div class="path">&gt;_æ://annual-meeting</div>
 <div class="lang"><button data-set="es" aria-pressed="true">ES</button><button data-set="en" aria-pressed="false">EN</button></div></nav>
 
-<header class="mast"><div class="logo">CLARION <b>☩</b></div>
-<span class="cap es">Invitación oficial · Latin American Lutheran Mission · Desde 1936</span>
-<span class="cap en">Official Invitation · Latin American Lutheran Mission · Est. 1936</span></header>
+<header class="mast">
+<div class="wm" aria-label="Latin American Lutheran Mission, 1936"><div class="wm-top"><span>LATIN</span><b>+1936</b><span>AMERICAN</span></div><div class="wm-main">LUTHERAN MISSION</div></div>
+<span class="cap es">CLARION ☩ · Invitación oficial</span>
+<span class="cap en">CLARION ☩ · Official Invitation</span></header>
 
 <section class="hero">
 <div class="kick es">Asamblea General · Reunión Anual 2026</div>
