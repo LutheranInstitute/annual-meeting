@@ -217,6 +217,10 @@ footer h2{color:var(--red);margin:0}.needle{color:var(--blue);font:italic 22px v
 <a class="btn p" href="https://us06web.zoom.us/j/89797243388?pwd=0HUQEwhaJk0kWK9aaWwaDeQppoPghX.1" target="_blank" rel="noopener"><span class="es">▶ Entrar a Zoom</span><span class="en">▶ Join Zoom</span></a>
 <a class="btn" href="https://classroom.google.com/c/ODA2NjgzNjkzNTMx?cjc=kuqsbw6x" target="_blank" rel="noopener"><span class="es">📚 Documentos · Coloquio</span><span class="en">📚 Documents · Coloquio</span></a>
 </div>
+<div class="cta" style="margin-top:9px">
+<a class="btn" href="https://us06web.zoom.us/j/89797243388?pwd=0HUQEwhaJk0kWK9aaWwaDeQppoPghX.1&amp;mynotes=on" target="_blank" rel="noopener"><span class="es">✎ Entrar + tomar notas</span><span class="en">✎ Join + take notes</span></a>
+<a class="btn" href="https://us06web.zoom.us/launch/jc/89797243388" target="_blank" rel="noopener"><span class="es">💬 Chat de la reunión</span><span class="en">💬 Meeting chat</span></a>
+</div>
 <details><summary>&gt;_ <span class="es">otras-formas-de-conectarse</span><span class="en">more-ways-to-connect</span></summary>
 <div class="more">
 <b class="es">Un toque desde el móvil · EE. UU.</b><b class="en">One tap mobile · US</b>
@@ -275,7 +279,7 @@ document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=()=>{navigator.cli
 const f=d=>d.toISOString().replace(/[-:]/g,'').replace(/\.\d+/,'');
 document.querySelectorAll('[data-ics]').forEach(b=>b.onclick=()=>{
  const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//LALM//Annual Meeting 2026//ES','BEGIN:VEVENT','UID:lalm-assembly-2026@lutheraninstitute.github.io','DTSTAMP:'+f(new Date()),'DTSTART:'+f(START),'DTEND:'+f(END),
- 'SUMMARY:Asamblea General 2026 · LALM · LALS · LALI','LOCATION:Zoom · ID 897 9724 3388 · Código 807997',
+ 'SUMMARY:General Assembly, Annual Meeting LALM, LALS, LALI - Texas','LOCATION:Zoom · ID 897 9724 3388 · Código 807997',
  'DESCRIPTION:Bright Horizons LATAM! Manos de Amor · Del hilo a la aguja.\\nZoom: '+ZOOM+'\\nID: 897 9724 3388 · Código: 807997\\nhttps://lutheraninstitute.github.io/annual-meeting/',
  'URL:'+ZOOM,'BEGIN:VALARM','TRIGGER:-PT30M','ACTION:DISPLAY','DESCRIPTION:Asamblea General 2026','END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));a.download='asamblea-lalm-2026.ics';document.body.appendChild(a);a.click();a.remove()});
