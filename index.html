@@ -27,7 +27,7 @@ nav{position:sticky;top:4px;z-index:49;display:flex;justify-content:space-betwee
 .lang button[aria-pressed=true]{background:var(--blue);color:#fff}
 .mast{text-align:center;padding:26px 20px 16px;border-bottom:1px solid var(--line)}
 .logo{font:44px/1 var(--serif);letter-spacing:.03em}.logo b{color:var(--red);font-weight:400}
-.wm{display:inline-block;text-align:center;color:var(--ink)}.wm-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font:600 12px Inter;letter-spacing:.32em;color:var(--blue)}.wm-top b{font:400 14px var(--serif);letter-spacing:.08em;color:var(--red)}.wm-main{margin-top:4px;font:400 clamp(30px,8vw,46px)/1 var(--serif);letter-spacing:.04em}
+.wm{display:inline-block;text-align:center;color:var(--ink)}.wm-top{font:400 22px/1 var(--serif);white-space:nowrap}.wm-top sup,.wm-top sub{font-size:.62em;line-height:0;letter-spacing:.06em}.wm-top sup{vertical-align:.62em;color:var(--blue)}.wm-top sub{vertical-align:-.28em;color:var(--red)}.wm-main{margin-top:2px;font:400 clamp(30px,8vw,46px)/1 var(--serif);letter-spacing:.04em}.wm-tag{margin-top:8px;font:italic 15px var(--serif);color:var(--muted)}.wm-love{margin-top:4px;font:700 11px Inter;letter-spacing:.2em;color:var(--red)}
 .cap{display:block;margin-top:8px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
 .hero{text-align:center;padding:44px 22px 34px;background:radial-gradient(circle at 50% 0,rgba(185,135,45,.2),transparent 40%)}
 .kick{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
@@ -98,7 +98,7 @@ footer h2{color:var(--red);margin:0}.needle{color:var(--blue);font:italic 22px v
 <div class="lang"><button data-set="es" aria-pressed="true">ES</button><button data-set="en" aria-pressed="false">EN</button></div></nav>
 
 <header class="mast">
-<div class="wm" aria-label="Latin American Lutheran Mission, 1936"><div class="wm-top"><span>LATIN</span><b>+1936</b><span>AMERICAN</span></div><div class="wm-main">LUTHERAN MISSION</div></div>
+<div class="wm" role="img" aria-label="ᴸᴬᵀᴵᴺ ₊₁₉₃₆ ᴬᴹᴱᴿᴵᶜᴬᴺ LUTHERAN MISSION"><div class="wm-top" aria-hidden="true"><sup>LATIN</sup> <sub>+1936</sub> <sup>AMERICAN</sup></div><div class="wm-main" aria-hidden="true">LUTHERAN MISSION</div><div class="wm-tag">Many Peoples · One Gospel</div><div class="wm-love">MANOS DE AMOR ❤️</div></div>
 <span class="cap es">CLARION ☩ · Invitación oficial</span>
 <span class="cap en">CLARION ☩ · Official Invitation</span></header>
 
@@ -170,13 +170,13 @@ footer h2{color:var(--red);margin:0}.needle{color:var(--blue);font:italic 22px v
 <div class="es"><h2>Lo que haremos juntos</h2>
 <p>Compartiremos el trabajo realizado, escucharemos informes de regiones y ministerios, revisaremos nuestra mayordomía y miraremos las prioridades para 2027.</p>
 <ol class="agenda"><li>Devocional de apertura</li><li>Lectura del acta de la reunión anterior</li><li>Informes anuales: Secretaría · Tesorería · Dirección</li><li>Asuntos pendientes</li><li>Asuntos nuevos</li><li>Elección de nuevos miembros de la Junta Directiva</li><li>Otros asuntos de la Reunión Anual</li><li>Tiempo de oración</li><li>Clausura</li></ol>
-<p class="note" style="margin-top:12px">Según el Artículo XII de los Estatutos de LALM. Quórum: 15 miembros.</p>
+<p class="note" style="margin-top:12px">Según el Artículo XII de los Estatutos (By-Laws) vigentes de LALM; quórum de 15 miembros. Los Estatutos son un documento distinto de los Artículos de Incorporación originales de 1936.</p>
 <h3 style="font:400 22px var(--serif);color:var(--red);margin:26px 0 6px">Preguntas para discernir</h3>
 <ol class="qs"><li>¿Cómo permanecemos presentes donde el ministerio es difícil?</li><li>¿Cómo fortalecemos la educación teológica a través de las fronteras?</li><li>¿Cómo preparamos pastores, maestros, misioneros y líderes laicos para la próxima generación?</li><li>¿Cómo puede ayudarnos la tecnología sin perder la presencia humana en el centro de la misión?</li><li>¿Cómo seguimos poniendo el Evangelio fielmente en las manos de quienes vienen después?</li></ol></div>
 <div class="en"><h2>What we will do together</h2>
 <p>We will reflect on the Mission's work, review ministry and educational developments, hear regional reports, consider the stewardship of our resources, and identify priorities for 2027.</p>
 <ol class="agenda"><li>Opening devotion</li><li>Reading of the minutes of the previous meeting</li><li>Annual reports: Secretary · Treasurer · Director</li><li>Unfinished business</li><li>New business</li><li>Election of new members of the Board of Directors</li><li>Other business for the Annual Meeting</li><li>Prayer session</li><li>Adjournment</li></ol>
-<p class="note" style="margin-top:12px">Per Article XII of the LALM Bylaws. Quorum: 15 members.</p>
+<p class="note" style="margin-top:12px">Per Article XII of the current LALM By-Laws; quorum of 15 members. The By-Laws are a separate document from the original 1936 Articles of Incorporation.</p>
 <h3 style="font:400 22px var(--serif);color:var(--red);margin:26px 0 6px">Questions we will ask</h3>
 <ol class="qs"><li>How do we remain present where ministry is difficult?</li><li>How do we strengthen theological education across borders?</li><li>How do we prepare pastors, teachers, missionaries and lay leaders for the next generation?</li><li>How can technology help us reach people without losing the human presence at the center of Christian mission?</li><li>How do we continue placing the Gospel faithfully into the hands of those who come next?</li></ol></div>
 </section>
