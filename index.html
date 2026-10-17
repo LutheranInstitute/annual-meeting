@@ -92,6 +92,23 @@ footer h2{color:var(--red);margin:0}.needle{color:var(--blue);font:italic 22px v
 </style>
 </head>
 <body>
+<div id="portada" role="dialog" aria-label="Manos de Amor · Del hilo a la aguja" onclick="cerrarPortada()">
+<img src="portada-estanzuela.jpg" alt="Manos de Amor · Del hilo a la aguja · Faith passed from hand to hand — bordado Estanzuela Pixel" decoding="async">
+<button type="button" onclick="event.stopPropagation();cerrarPortada()">Entrar ›</button>
+</div>
+<style>
+#portada{position:fixed;inset:0;z-index:9999;background:#f3ead8;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:opacity .9s ease}
+#portada img{max-width:100%;max-height:100%;height:100%;object-fit:contain}
+#portada button{position:absolute;bottom:max(18px,env(safe-area-inset-bottom));right:18px;font:600 15px/1 Georgia,serif;color:#1b2a4a;background:#f3ead8e6;border:1.5px solid #b08a3e;border-radius:999px;padding:10px 16px;cursor:pointer}
+#portada.fuera{opacity:0;pointer-events:none}
+@media (prefers-reduced-motion:reduce){#portada{transition:none}}
+</style>
+<script>
+function cerrarPortada(){var p=document.getElementById('portada');if(!p||p.classList.contains('fuera'))return;p.classList.add('fuera');setTimeout(function(){p.remove()},950)}
+setTimeout(cerrarPortada,8000);
+document.addEventListener('keydown',function(e){if(e.key==='Escape'||e.key==='Enter')cerrarPortada()});
+</script>
+
 <div class="shell">
 <div class="bar"><i id="bar"></i></div>
 <nav><div class="path">&gt;_æ://annual-meeting</div>
